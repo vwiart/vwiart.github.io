@@ -1,6 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
+    color: darkslategray;
+}
+
+a {
+    color: rgb(24, 100, 224);
+    border-bottom: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -25,6 +36,14 @@ header {
     box-shadow: 0 0px 10px rgba(128, 128, 128, 0.25);
 }
 
+header nav.left {
+    float: left;
+}
+
+header nav.right {
+    float: right;
+}
+
 header nav ul {
 	margin: 0;
 	padding: 0;
@@ -38,14 +57,8 @@ header nav ul li {
 }
 
 header nav ul li a {
+    font-size: 12pt;
 	line-height: 30px;
-	border-bottom: none;
-	text-decoration: none;
-}
-header nav ul li a:hover,
-header nav ul li a:focus {
-	text-decoration: none;
-	border-bottom: none;
 }
 
 main {
@@ -57,7 +70,29 @@ main {
     padding: 80px 20px 50px 20px;
 }
 
-h1 {
+summary {
+    margin: 0 0 2em 0;
+    padding: 1em;
+    font-size:14pt;
+    border-bottom: 1px solid rgba(22,22,22, .25);
+}
+
+summary h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+    font-weight: normal;
+    margin:0;
+}
+
+summary time {
+    font-size:10pt;
+    margin:0;
+    padding:0;
+    color: slategray;
+    line-height: 30px;
+}
+
+article h1{
     font-family: 'Playfair Display', serif;
     font-size: 24pt;
 }
