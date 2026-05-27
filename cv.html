@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cv — vincent.wiart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="prompt">~/</span>vincent.wiart<span class="cursor"></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="cv.html" class="is-active">cv</a></li>
+        <li><a href="interests.html">interests</a></li>
+        <li><a href="blog.html">blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-header">
+    <span>~/vincent/cv.md</span>
+    <span class="sep">·</span>
+    <span>last updated 26.05.2026</span>
+    <span class="sep">·</span>
+    <span>v 4.2.1</span>
+  </div>
+
+  <h1 class="glitch" data-text="curriculum">curriculum</h1>
+
+  <div class="cv-bio">
+    Vincent Wiart — software engineer, <span class="hl">8 years</span> shipping
+    backend systems in Go and Rust. Reach for distributed primitives, type-driven
+    APIs, and the kind of observability you only appreciate at 3am. Occasional
+    forays into SolidJS, Tailwind and Flutter when the frontend gets in the way
+    of the backend doing its job.
+  </div>
+
+  <div class="cv-grid">
+
+    <div>
+      <div class="cv-section">
+        <h2><span class="num">01</span> experience</h2>
+
+        <div class="role">
+          <div class="role-time">2024 — <span class="now">now</span></div>
+          <div>
+            <h3 class="role-title">staff backend engineer</h3>
+            <p class="role-org">photon labs · remote</p>
+            <p class="role-desc">Owning the realtime ingest layer — Rust services pushing ~80k events/s through Redpanda and pgvector. Designed the per-tenant rate-limiter that replaced a flaky envoy filter.</p>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="role-time">2021 — 2024</div>
+          <div>
+            <h3 class="role-title">senior software engineer</h3>
+            <p class="role-org">north ledger · paris</p>
+            <p class="role-desc">Rebuilt the double-entry ledger core in Go with strong typing around money and FX. Led the migration off a legacy MySQL setup to Postgres + logical replication. Mentored four engineers.</p>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="role-time">2019 — 2021</div>
+          <div>
+            <h3 class="role-title">software engineer</h3>
+            <p class="role-org">harbor.io · paris</p>
+            <p class="role-desc">Backend for a mobile-first banking product. Wrote a Flutter prototype that shipped to prod for six months while the iOS team scaled. Owned the auth perimeter end-to-end.</p>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="role-time">2017 — 2019</div>
+          <div>
+            <h3 class="role-title">software engineer, junior</h3>
+            <p class="role-org">cortex systems · lille</p>
+            <p class="role-desc">First gig. Joined a four-person team building a B2B API gateway in Go. Learned how production fails, mostly the hard way.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2><span class="num">02</span> open source</h2>
+        <div class="role">
+          <div class="role-time">ongoing</div>
+          <div>
+            <h3 class="role-title">crius</h3>
+            <p class="role-org">distributed cron with sub-second scheduling · rust · ~1.2k ★</p>
+            <p class="role-desc">Single-binary cron replacement built on Raft. Used in production at three companies I know of.</p>
+          </div>
+        </div>
+        <div class="role">
+          <div class="role-time">ongoing</div>
+          <div>
+            <h3 class="role-title">solid-query-lite</h3>
+            <p class="role-org">tiny data layer for SolidJS · typescript · ~480 ★</p>
+            <p class="role-desc">A ~3kb cache + invalidation primitive. Born out of irritation with the bigger options.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="cv-section">
+        <h2><span class="num">03</span> stack</h2>
+        <p class="stack-label">primary</p>
+        <div class="stack stack-row">
+          <span class="tag primary">go</span>
+          <span class="tag primary">rust</span>
+          <span class="tag primary">postgres</span>
+        </div>
+        <p class="stack-label">comfortable</p>
+        <div class="stack stack-row">
+          <span class="tag">solidjs</span>
+          <span class="tag">tailwind</span>
+          <span class="tag">flutter</span>
+          <span class="tag">typescript</span>
+          <span class="tag">redpanda</span>
+          <span class="tag">terraform</span>
+          <span class="tag">docker</span>
+          <span class="tag">grpc</span>
+        </div>
+        <p class="stack-label">in orbit</p>
+        <div class="stack">
+          <span class="tag">zig</span>
+          <span class="tag">nats</span>
+          <span class="tag">opentelemetry</span>
+          <span class="tag">nix</span>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2><span class="num">04</span> education</h2>
+        <div class="role">
+          <div class="role-time">2014 — 2017</div>
+          <div>
+            <h3 class="role-title">m.sc. computer science</h3>
+            <p class="role-org">epita · paris</p>
+            <p class="role-desc">Distributed systems and compilers track.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2><span class="num">05</span> meta</h2>
+        <dl class="kv">
+          <dt>email</dt>      <dd>hello@example.com</dd>
+          <dt>location</dt>   <dd>paris · remote-friendly</dd>
+          <dt>languages</dt>  <dd>fr (native), en (fluent)</dd>
+          <dt>github</dt>     <dd><a href="https://github.com/">@vwiart</a></dd>
+          <dt>linkedin</dt>   <dd><a href="https://www.linkedin.com/">/in/vwiart</a></dd>
+        </dl>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span><span class="ok">●</span> static · no js · github pages</span>
+    <span>© 2026 vincent wiart <span class="sep">·</span> build 26.05.26</span>
+  </div>
+</footer>
+
+</body>
+</html>
