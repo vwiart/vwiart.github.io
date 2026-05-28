@@ -1,147 +1,179 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>blog — vincent.wiart</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>blog — vincent.wiart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="nav">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-brand">
+                    <span class="prompt">~/</span>vincent.wiart<span
+                        class="cursor"
+                    ></span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="cv.html">cv</a></li>
+                        <li><a href="interests.html">interests</a></li>
+                        <li><a href="blog.html" class="is-active">blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <span class="prompt">~/</span>vincent.wiart<span class="cursor"></span>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">home</a></li>
-        <li><a href="cv.html">cv</a></li>
-        <li><a href="interests.html">interests</a></li>
-        <li><a href="blog.html" class="is-active">blog</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <main class="page">
+            <div class="page-header">
+                <span>~/vincent.wiart/blog/</span>
+                <span class="sep">·</span>
+                <span>cat *.md | tail</span>
+                <span class="sep">·</span>
+                <span>14 posts</span>
+            </div>
 
-<main class="page">
-  <div class="page-header">
-    <span>~/vincent/blog/</span>
-    <span class="sep">·</span>
-    <span>cat *.md | tail</span>
-    <span class="sep">·</span>
-    <span>14 posts</span>
-  </div>
+            <h1 class="glitch" data-text="writing">writing</h1>
+            <p class="lead" style="max-width: 580px; margin-top: 14px">
+                Short essays on backend systems, Rust, the occasional rant about
+                frontend tooling, and notes from things I'm actually building.
+            </p>
 
-  <h1 class="glitch" data-text="writing">writing</h1>
-  <p class="lead" style="max-width:580px;margin-top:14px">
-    Short essays on backend systems, Rust, the occasional rant about
-    frontend tooling, and notes from things I'm actually building.
-  </p>
+            <div class="posts">
+                <div class="year-divider">2026</div>
 
-  <div class="posts">
+                <article class="post-row">
+                    <time class="post-date">may 12</time>
+                    <a class="post-title" href="#"
+                        >on building a distributed cron in rust</a
+                    >
+                    <span class="post-tag">rust</span>
+                </article>
 
-    <div class="year-divider">2026</div>
+                <article class="post-row">
+                    <time class="post-date">apr 28</time>
+                    <a class="post-title" href="#"
+                        >tracing pgvector queries with opentelemetry</a
+                    >
+                    <span class="post-tag">postgres</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">may 12</time>
-      <a class="post-title" href="#">on building a distributed cron in rust</a>
-      <span class="post-tag">rust</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">mar 16</time>
+                    <a class="post-title" href="#"
+                        >the case for go in 2026, by someone who keeps trying to
+                        leave it</a
+                    >
+                    <span class="post-tag">go</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">apr 28</time>
-      <a class="post-title" href="#">tracing pgvector queries with opentelemetry</a>
-      <span class="post-tag">postgres</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">feb 02</time>
+                    <a class="post-title" href="#"
+                        >notes on hand-rolling a per-tenant rate limiter</a
+                    >
+                    <span class="post-tag">backend</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">mar 16</time>
-      <a class="post-title" href="#">the case for go in 2026, by someone who keeps trying to leave it</a>
-      <span class="post-tag">go</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">jan 18</time>
+                    <a class="post-title" href="#"
+                        >solidjs after a year: the parts that aged well</a
+                    >
+                    <span class="post-tag">solidjs</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">feb 02</time>
-      <a class="post-title" href="#">notes on hand-rolling a per-tenant rate limiter</a>
-      <span class="post-tag">backend</span>
-    </article>
+                <div class="year-divider">2025</div>
 
-    <article class="post-row">
-      <time class="post-date">jan 18</time>
-      <a class="post-title" href="#">solidjs after a year: the parts that aged well</a>
-      <span class="post-tag">solidjs</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">nov 30</time>
+                    <a class="post-title" href="#"
+                        >why i'm rewriting my home server in nix (again)</a
+                    >
+                    <span class="post-tag">nix</span>
+                </article>
 
-    <div class="year-divider">2025</div>
+                <article class="post-row">
+                    <time class="post-date">oct 11</time>
+                    <a class="post-title" href="#"
+                        >the typed-money pattern, in go and in rust</a
+                    >
+                    <span class="post-tag">patterns</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">nov 30</time>
-      <a class="post-title" href="#">why i'm rewriting my home server in nix (again)</a>
-      <span class="post-tag">nix</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">sep 04</time>
+                    <a class="post-title" href="#"
+                        >a small love letter to postgres logical replication</a
+                    >
+                    <span class="post-tag">postgres</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">oct 11</time>
-      <a class="post-title" href="#">the typed-money pattern, in go and in rust</a>
-      <span class="post-tag">patterns</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">aug 19</time>
+                    <a class="post-title" href="#"
+                        >flutter in a backend team, six months in</a
+                    >
+                    <span class="post-tag">flutter</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">sep 04</time>
-      <a class="post-title" href="#">a small love letter to postgres logical replication</a>
-      <span class="post-tag">postgres</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">jun 22</time>
+                    <a class="post-title" href="#"
+                        >build-time enforcement of api compatibility, gently</a
+                    >
+                    <span class="post-tag">tooling</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">aug 19</time>
-      <a class="post-title" href="#">flutter in a backend team, six months in</a>
-      <span class="post-tag">flutter</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">may 04</time>
+                    <a class="post-title" href="#"
+                        >migrating off envoy, with feelings</a
+                    >
+                    <span class="post-tag">infra</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">jun 22</time>
-      <a class="post-title" href="#">build-time enforcement of api compatibility, gently</a>
-      <span class="post-tag">tooling</span>
-    </article>
+                <div class="year-divider">2024</div>
 
-    <article class="post-row">
-      <time class="post-date">may 04</time>
-      <a class="post-title" href="#">migrating off envoy, with feelings</a>
-      <span class="post-tag">infra</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">dec 14</time>
+                    <a class="post-title" href="#"
+                        >on holding the pager and writing better runbooks for
+                        future-me</a
+                    >
+                    <span class="post-tag">ops</span>
+                </article>
 
-    <div class="year-divider">2024</div>
+                <article class="post-row">
+                    <time class="post-date">oct 02</time>
+                    <a class="post-title" href="#"
+                        >small tools that pay rent: a year of personal cli</a
+                    >
+                    <span class="post-tag">tooling</span>
+                </article>
 
-    <article class="post-row">
-      <time class="post-date">dec 14</time>
-      <a class="post-title" href="#">on holding the pager and writing better runbooks for future-me</a>
-      <span class="post-tag">ops</span>
-    </article>
+                <article class="post-row">
+                    <time class="post-date">jul 17</time>
+                    <a class="post-title" href="#">hello, blog (again)</a>
+                    <span class="post-tag">meta</span>
+                </article>
+            </div>
+        </main>
 
-    <article class="post-row">
-      <time class="post-date">oct 02</time>
-      <a class="post-title" href="#">small tools that pay rent: a year of personal cli</a>
-      <span class="post-tag">tooling</span>
-    </article>
-
-    <article class="post-row">
-      <time class="post-date">jul 17</time>
-      <a class="post-title" href="#">hello, blog (again)</a>
-      <span class="post-tag">meta</span>
-    </article>
-
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="site-footer-inner">
-    <span><span class="ok">●</span> static · no js · github pages</span>
-    <span>© 2026 vincent wiart <span class="sep">·</span> build 26.05.26</span>
-  </div>
-</footer>
-
-</body>
+        <footer class="site-footer">
+            <div class="site-footer-inner">
+                <span
+                    ><span class="ok">●</span> static · no js · github
+                    pages</span
+                >
+                <span
+                    >© 2026 vincent wiart <span class="sep">·</span> build
+                    26.05.26</span
+                >
+            </div>
+        </footer>
+    </body>
 </html>

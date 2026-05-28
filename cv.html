@@ -1,176 +1,367 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>cv — vincent.wiart</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>cv — vincent.wiart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="nav">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-brand">
+                    <span class="prompt">~/</span>vincent.wiart<span
+                        class="cursor"
+                    ></span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="cv.html" class="is-active">cv</a></li>
+                        <li><a href="interests.html">interests</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <span class="prompt">~/</span>vincent.wiart<span class="cursor"></span>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">home</a></li>
-        <li><a href="cv.html" class="is-active">cv</a></li>
-        <li><a href="interests.html">interests</a></li>
-        <li><a href="blog.html">blog</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <main class="page">
+            <div class="page-header">
+                <span>~/vincent.wiart/cv.txt</span>
+                <span class="sep">·</span>
+                <span>last updated 26.05.2026</span>
+            </div>
 
-<main class="page">
-  <div class="page-header">
-    <span>~/vincent/cv.md</span>
-    <span class="sep">·</span>
-    <span>last updated 26.05.2026</span>
-    <span class="sep">·</span>
-    <span>v 4.2.1</span>
-  </div>
+            <h1
+                class="glitch"
+                data-text="curriculum vit&aelig;"
+                style="font-family: var(--sans)"
+            >
+                curriculum vit&aelig;
+            </h1>
 
-  <h1 class="glitch" data-text="curriculum">curriculum</h1>
+            <div class="cv-bio">
+                Vincent Wiart — software engineer,
+                <span class="hl">20 years</span> shipping backend systems. I
+                spend most of that time in Go, on APIs and data pipelines that
+                try to stay boring under load. What I care about is simplicity:
+                clear contracts, observability you can actually trust, less code
+                rather than more. I tinker with SolidJS, Tailwind, and Flutter
+                for side projects — strictly after hours.
+            </div>
 
-  <div class="cv-bio">
-    Vincent Wiart — software engineer, <span class="hl">8 years</span> shipping
-    backend systems in Go and Rust. Reach for distributed primitives, type-driven
-    APIs, and the kind of observability you only appreciate at 3am. Occasional
-    forays into SolidJS, Tailwind and Flutter when the frontend gets in the way
-    of the backend doing its job.
-  </div>
+            <div class="cv-grid">
+                <div>
+                    <div class="cv-section">
+                        <h2><span class="num">01</span> experience</h2>
 
-  <div class="cv-grid">
+                        <div class="role">
+                            <div class="role-time">
+                                March 2022 — <span class="now">now</span>
+                            </div>
+                            <div>
+                                <h3 class="role-title">
+                                    Senior Backend engineer
+                                </h3>
+                                <p class="role-org">Collegial</p>
+                                <div class="role-desc">
+                                    <p>
+                                        Collegial's mission is to drive
+                                        transformation through learning by
+                                        delivering learning solutions that
+                                        maximize business impact while
+                                        empowering organisation transformation.
+                                    </p>
+                                    <p>
+                                        Owning the analytics system, responsible
+                                        of tracking learner's progress and
+                                        maintaining the learning catalog. I
+                                        built data pipelines that process and
+                                        transform raw learning data (effort,
+                                        completion) into meaningful insights.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-    <div>
-      <div class="cv-section">
-        <h2><span class="num">01</span> experience</h2>
+                        <div class="role">
+                            <div class="role-time">Jan. 2021 — March 2022</div>
+                            <div>
+                                <h3 class="role-title">
+                                    senior backend engineer
+                                </h3>
+                                <p class="role-org">Zevoy</p>
+                                <div class="role-desc">
+                                    <p>
+                                        Zevoy’s business card is designed and
+                                        priced to be used by all your employees.
+                                        Linked to Zevoy’s mobile app and hub,
+                                        Zevoy enables one seamless expense
+                                        management solution for our customers'
+                                        company, saving them time and money
+                                        while increasing employee satisfaction.
+                                    </p>
+                                    <p>
+                                        As a backend engineer, I'm responsible
+                                        of designing, implementing and
+                                        maintaining the system, from the
+                                        transaction pipeline to the expense
+                                        management.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="role">
-          <div class="role-time">2024 — <span class="now">now</span></div>
-          <div>
-            <h3 class="role-title">staff backend engineer</h3>
-            <p class="role-org">photon labs · remote</p>
-            <p class="role-desc">Owning the realtime ingest layer — Rust services pushing ~80k events/s through Redpanda and pgvector. Designed the per-tenant rate-limiter that replaced a flaky envoy filter.</p>
-          </div>
-        </div>
+                        <div class="role">
+                            <div class="role-time">sept. 2016 — Jan. 2020</div>
+                            <div>
+                                <h3 class="role-title">
+                                    senior backend engineer
+                                </h3>
+                                <p class="role-org">Meniga Rewards</p>
+                                <div class="role-desc">
+                                    <p>
+                                        Meniga Rewards connects to our users’
+                                        payment cards, and analyzes transactions
+                                        to learn their buying behaviour. This
+                                        way, our users only get rewards from
+                                        brands they're interested in. And by
+                                        sticking to cashback returns, we make
+                                        sure they get rewards they actually find
+                                        useful. Simply put, we put purchasing
+                                        power in the hands of consumers, and
+                                        meaningful marketing in the hands of
+                                        brands.
+                                    </p>
+                                    <p>
+                                        As a backend engineer, I'm responsible
+                                        of the design, implementation and
+                                        maintenance of our systems. I work in
+                                        collaboration with every team (sales,
+                                        marketing, finance, ...) to help them to
+                                        state their problem and provide them a
+                                        solution on an iterative process.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="role">
-          <div class="role-time">2021 — 2024</div>
-          <div>
-            <h3 class="role-title">senior software engineer</h3>
-            <p class="role-org">north ledger · paris</p>
-            <p class="role-desc">Rebuilt the double-entry ledger core in Go with strong typing around money and FX. Led the migration off a legacy MySQL setup to Postgres + logical replication. Mentored four engineers.</p>
-          </div>
-        </div>
+                        <div class="role">
+                            <div class="role-time">2008 — sept. 2016</div>
+                            <div>
+                                <h3 class="role-title">Project manager</h3>
+                                <p class="role-org">iMDEO</p>
+                                <div class="role-desc">
+                                    <p>
+                                        I lead a team of developers and UX
+                                        designers to conduct projects for
+                                        internal stakeholders or customers.
+                                    </p>
+                                    <p>
+                                        Created a web-application to help the
+                                        Ecoles de la deuxième chance, a french
+                                        association dedicated to help young
+                                        adults to get back into education, that
+                                        allows them to keep track of the
+                                        progress of each student
+                                    </p>
+                                    <p>
+                                        Built a web-application for Meccoli, a
+                                        french company specialized in rail
+                                        tracks maintenance, handling the
+                                        logistics for each site (planning,
+                                        equipment booking ...)
+                                    </p>
+                                    <p>
+                                        Coordinated the maintenance and
+                                        development of the 10 intranets of
+                                        l'Oréal. I have consolidated the
+                                        customer relationship with l'Oréal
+                                        during 10 years, first as a developer,
+                                        then as a project manager.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="role">
-          <div class="role-time">2019 — 2021</div>
-          <div>
-            <h3 class="role-title">software engineer</h3>
-            <p class="role-org">harbor.io · paris</p>
-            <p class="role-desc">Backend for a mobile-first banking product. Wrote a Flutter prototype that shipped to prod for six months while the iOS team scaled. Owned the auth perimeter end-to-end.</p>
-          </div>
-        </div>
+                        <div class="role">
+                            <div class="role-time">jan. 2006 — 2008</div>
+                            <div>
+                                <h3 class="role-title">Full Stack Engineer</h3>
+                                <p class="role-org">iMDEO</p>
+                                <div class="role-desc">
+                                    <p>
+                                        I worked in a team of engineer as a full
+                                        stack engineer, specialized in Java and
+                                        C# technology on various project.
+                                    </p>
+                                    <p>
+                                        Integrated an engineer team as a
+                                        consultant at Chanel, working on the
+                                        maintenance of their intranet (eg.
+                                        "Chanel Edition", a web application
+                                        handling the translating workflow for
+                                        all chanel products).
+                                    </p>
+                                    <p>
+                                        Maintained 10 SharePoint portals for
+                                        l'Oréal.
+                                    </p>
+                                    <p>
+                                        Designed and implemented the web portal
+                                        of Reporters d'espoirs, a french
+                                        association of journalist specialized in
+                                        the positive news. This web portal
+                                        allowed reporters d'espoirs to multiply
+                                        their reach by 3, delivering hundreds of
+                                        positive news per month.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="role">
-          <div class="role-time">2017 — 2019</div>
-          <div>
-            <h3 class="role-title">software engineer, junior</h3>
-            <p class="role-org">cortex systems · lille</p>
-            <p class="role-desc">First gig. Joined a four-person team building a B2B API gateway in Go. Learned how production fails, mostly the hard way.</p>
-          </div>
-        </div>
-      </div>
+                    <div class="cv-section">
+                        <h2>
+                            <span class="num">02</span> Licenses and
+                            certifications
+                        </h2>
+                        <div class="role">
+                            <div class="role-time">jan. 2017</div>
+                            <div>
+                                <h3 class="role-title">
+                                    Self-Driving car Engineer Nanodegree
+                                </h3>
+                                <p class="role-org">Coursera</p>
+                                <p class="role-desc">
+                                    This course final project is about writing
+                                    some software that was deployed to an actual
+                                    car for a
+                                    <a
+                                        href="https://www.youtube.com/watch?v=_zUDEl6GGPc"
+                                        >test drive</a
+                                    >.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="role">
+                            <div class="role-time">jan. 2017</div>
+                            <div>
+                                <h3 class="role-title">
+                                    Deep Learning nanodegree
+                                </h3>
+                                <p class="role-org">Coursera</p>
+                                <p class="role-desc">
+                                    Learning the foundamentals of deep-learning.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="role">
+                            <div class="role-time">apr. 2015</div>
+                            <div>
+                                <h3 class="role-title">Machine learning</h3>
+                                <p class="role-org">Coursera</p>
+                                <p class="role-desc">
+                                    Foundamentals of machine learning.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="role">
+                            <div class="role-time">dec. 2013</div>
+                            <div>
+                                <h3 class="role-title">
+                                    Principle of Reactive Programming
+                                </h3>
+                                <p class="role-org">Coursera / EPFL</p>
+                            </div>
+                        </div>
+                        <div class="role">
+                            <div class="role-time">aug. 2004</div>
+                            <div>
+                                <h3 class="role-title">
+                                    Euro American Business diploma
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="cv-section">
-        <h2><span class="num">02</span> open source</h2>
-        <div class="role">
-          <div class="role-time">ongoing</div>
-          <div>
-            <h3 class="role-title">crius</h3>
-            <p class="role-org">distributed cron with sub-second scheduling · rust · ~1.2k ★</p>
-            <p class="role-desc">Single-binary cron replacement built on Raft. Used in production at three companies I know of.</p>
-          </div>
-        </div>
-        <div class="role">
-          <div class="role-time">ongoing</div>
-          <div>
-            <h3 class="role-title">solid-query-lite</h3>
-            <p class="role-org">tiny data layer for SolidJS · typescript · ~480 ★</p>
-            <p class="role-desc">A ~3kb cache + invalidation primitive. Born out of irritation with the bigger options.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+                <aside>
+                    <div class="cv-section">
+                        <h2><span class="num">03</span> stack</h2>
+                        <p class="stack-label">primary</p>
+                        <div class="stack stack-row">
+                            <span class="tag primary">go</span>
+                            <span class="tag primary">postgres</span>
+                        </div>
+                        <p class="stack-label">comfortable</p>
+                        <div class="stack stack-row">
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">OpenAPI</span>
+                            <span class="tag">terraform</span>
+                            <span class="tag">docker</span>
+                        </div>
+                        <p class="stack-label">in orbit</p>
+                        <div class="stack">
+                            <span class="tag">Rust</span>
+                            <span class="tag">SolidJS</span>
+                            <span class="tag">Flutter</span>
+                        </div>
+                    </div>
 
-    <aside>
-      <div class="cv-section">
-        <h2><span class="num">03</span> stack</h2>
-        <p class="stack-label">primary</p>
-        <div class="stack stack-row">
-          <span class="tag primary">go</span>
-          <span class="tag primary">rust</span>
-          <span class="tag primary">postgres</span>
-        </div>
-        <p class="stack-label">comfortable</p>
-        <div class="stack stack-row">
-          <span class="tag">solidjs</span>
-          <span class="tag">tailwind</span>
-          <span class="tag">flutter</span>
-          <span class="tag">typescript</span>
-          <span class="tag">redpanda</span>
-          <span class="tag">terraform</span>
-          <span class="tag">docker</span>
-          <span class="tag">grpc</span>
-        </div>
-        <p class="stack-label">in orbit</p>
-        <div class="stack">
-          <span class="tag">zig</span>
-          <span class="tag">nats</span>
-          <span class="tag">opentelemetry</span>
-          <span class="tag">nix</span>
-        </div>
-      </div>
+                    <div class="cv-section">
+                        <h2><span class="num">04</span> education</h2>
+                        <div class="role">
+                            <div class="role-time">2000 — 2005</div>
+                            <div>
+                                <h3 class="role-title">
+                                    Engineer's degree, specialization in
+                                    systems.
+                                </h3>
+                                <p class="role-org">EFREI · paris</p>
+                                <p class="role-desc">
+                                    Distributed systems, databases etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="cv-section">
-        <h2><span class="num">04</span> education</h2>
-        <div class="role">
-          <div class="role-time">2014 — 2017</div>
-          <div>
-            <h3 class="role-title">m.sc. computer science</h3>
-            <p class="role-org">epita · paris</p>
-            <p class="role-desc">Distributed systems and compilers track.</p>
-          </div>
-        </div>
-      </div>
+                    <div class="cv-section">
+                        <h2><span class="num">05</span> meta</h2>
+                        <dl class="kv">
+                            <dt>location</dt>
+                            <dd>Stockholm · remote-friendly</dd>
+                            <dt>languages</dt>
+                            <dd>fr (native), en (fluent), sv (basics)</dd>
+                            <dt>github</dt>
+                            <dd>
+                                <a href="https://github.com/vwiart">@vwiart</a>
+                            </dd>
+                            <dt>linkedin</dt>
+                            <dd>
+                                <a href="https://www.linkedin.com/in/vwiart/"
+                                    >/in/vwiart</a
+                                >
+                            </dd>
+                        </dl>
+                    </div>
+                </aside>
+            </div>
+        </main>
 
-      <div class="cv-section">
-        <h2><span class="num">05</span> meta</h2>
-        <dl class="kv">
-          <dt>email</dt>      <dd>hello@example.com</dd>
-          <dt>location</dt>   <dd>paris · remote-friendly</dd>
-          <dt>languages</dt>  <dd>fr (native), en (fluent)</dd>
-          <dt>github</dt>     <dd><a href="https://github.com/">@vwiart</a></dd>
-          <dt>linkedin</dt>   <dd><a href="https://www.linkedin.com/">/in/vwiart</a></dd>
-        </dl>
-      </div>
-    </aside>
-
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="site-footer-inner">
-    <span><span class="ok">●</span> static · no js · github pages</span>
-    <span>© 2026 vincent wiart <span class="sep">·</span> build 26.05.26</span>
-  </div>
-</footer>
-
-</body>
+        <footer class="site-footer">
+            <div class="site-footer-inner">
+                <span
+                    ><span class="ok">●</span> static · no js · github
+                    pages</span
+                >
+                <span
+                    >© 2026 vincent wiart <span class="sep">·</span> build
+                    26.05.26</span
+                >
+            </div>
+        </footer>
+    </body>
 </html>
