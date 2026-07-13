@@ -8,10 +8,10 @@
 
 :root {
     /* warm near-black surfaces */
-    --bg: oklch(0.155 0.006 70);
-    --bg-elev: oklch(0.19 0.008 70);
+    --bg: oklch(0.225 0.006 70);
+    --bg-elev: oklch(0.15 0.008 70);
     --bg-card: oklch(0.205 0.008 70);
-    --line: oklch(0.275 0.01 70);
+    --line: oklch(0.375 0.01 70);
     --line-soft: oklch(0.23 0.008 70);
 
     /* type */
